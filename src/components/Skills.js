@@ -1,28 +1,30 @@
 import React from "react";
 import { FaJava, FaReact, FaNodeJs, FaDocker, FaGitAlt, FaKey, FaGithub } from "react-icons/fa";
-import { SiSpringboot, SiMysql, SiMongodb, SiTailwindcss, SiPostgresql, SiJenkins, SiHibernate } from "react-icons/si";
+import { SiSpringboot, SiMysql, SiMongodb, SiJenkins, SiHibernate } from "react-icons/si";
 import { motion } from "framer-motion";
 import { GiTortoise } from "react-icons/gi";
 import { TbBrandCSharp } from "react-icons/tb";
+import { DiRedis } from "react-icons/di";
 
 
 const skills = [
   { name: "Java", icon: <FaJava className="text-orange-400" /> },
   { name: "Spring Boot", icon: <SiSpringboot className="text-green-500" /> },
+  { name: "Redis", icon: <DiRedis className="text-gray-300" /> },
   { name: "Hibernate", icon: <SiHibernate className="text-green-400" /> },
+  { name: "Kafka", icon: <fakafka className="text-green-500" /> },
   { name: "React.js", icon: <FaReact className="text-cyan-400" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-400" /> },
   { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
   { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
-  { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-600" /> },
   { name: "JWT", icon: <FaKey className="text-yellow-400" /> },
   { name: "Docker", icon: <FaDocker className="text-blue-300" /> },
   { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
   { name: "GitHub", icon: <FaGithub className="text-white" /> },
   { name: "Jenkins", icon: <SiJenkins className="text-red-500" /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
   { name: "C#", icon: <TbBrandCSharp className="text-purple-400" /> }, // fallback icon for C#
-  { name: "Tortoise SVN", icon: <GiTortoise className="text-gray-300" /> }, // fallback icon for Tortoise SVN
+  { name: "Tortoise SVN", icon: <GiTortoise className="text-gray-300" /> },
+  // fallback icon for Tortoise SVN
 ];
 
 const Skills = () => (
